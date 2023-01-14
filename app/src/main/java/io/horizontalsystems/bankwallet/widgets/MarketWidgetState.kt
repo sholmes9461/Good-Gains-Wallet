@@ -4,6 +4,7 @@ import com.google.gson.TypeAdapter
 import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonWriter
 import io.horizontalsystems.bankwallet.R
+import io.horizontalsystems.marketkit.models.BlockchainType
 import java.math.BigDecimal
 
 data class MarketWidgetState(
@@ -46,6 +47,7 @@ data class MarketWidgetItem(
     val marketCap: String?,
     val volume: String?,
     val diff: BigDecimal?,
+    val blockchainType: BlockchainType?,
 
     val imageRemoteUrl: String,
     val imageLocalPath: String? = null
